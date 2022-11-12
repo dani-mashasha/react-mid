@@ -106,7 +106,7 @@ export const UserComp = ({
                     {onUpdateUser ? (
                         <input
                             name="street"
-                            value={updatedUser?.address?.street || null}
+                            value={updatedUser?.address?.street || ""}
                             onChange={(e) => handleChange(e)}
                         ></input>
                     ) : user?.address?.street ? (
@@ -122,7 +122,7 @@ export const UserComp = ({
                     {onUpdateUser ? (
                         <input
                             name="city"
-                            value={updatedUser?.address?.city || null}
+                            value={updatedUser?.address?.city || ""}
                             onChange={(e) => handleChange(e)}
                         ></input>
                     ) : user?.address?.city ? (
@@ -137,7 +137,7 @@ export const UserComp = ({
                     {onUpdateUser ? (
                         <input
                             name="zipcode"
-                            value={updatedUser?.address?.zipcode || null}
+                            value={updatedUser?.address?.zipcode || ""}
                             onChange={(e) => handleChange(e)}
                         ></input>
                     ) : user?.address?.zipcode ? (
